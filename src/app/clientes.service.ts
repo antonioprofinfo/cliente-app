@@ -15,7 +15,7 @@ export class ClientesService {
   }
 
   salvar(cliente: Cliente): Observable<Cliente> {
-    return this.http.post<Cliente>('http://localhost:8080/api/clientes', cliente)
+    return this.http.post<Cliente>('https://plusmanut.herokuapp.com/api/clientes', cliente)
   }
 
   getCliente(): Cliente {
